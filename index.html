@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Bandaid | Concerts Tonight</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/cal.css" />
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.3.3/backbone-min.js"></script>-->
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/json2.js"></script>
+    <script src="../js/underscore.js"></script>
+    <script src="../js/backbone.js"></script>
+    <script src="../js/mustache.js"></script>
+    <script src="../js/spin.js"></script>
+
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyApVAvtKIgrRm-PBx1HLhGRJ3XaGGreQdo&sensor=false"></script>
+
+    <script src="js/utils/datetime.js"></script>
+    <script src="js/utils/geolocation-shim.js"></script>
+    <script src="js/utils/sonic.js"></script>
+    <script src="js/utils/map.js"></script>
+    <script src="js/utils/alphabet.js"></script>
+    <script src="js/utils/yelp.js"></script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30192138-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=204123649694127";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <container>
+      <div id="titles">
+        <h1 id="title"><a href='#' onclick='appView.goHome()'>Bandaid</a></h1>
+        <h2 id="subtitle">Concerts in San Francisco</h2>
+      </div>
+      <content></content>
+      <footer>
+        <span id="yelp">Powered by <a href="http://yelp.com"><img src="http://media1.ak.yelpcdn.com/static/201012162846157596/img/developers/yelp_logo_50x25.png" alt="yelp logo" /></a> | <a href="http://sonicliving.com">Sonic Living</a> | <a href="http://maps.google.com">Google Maps</a></span>
+        <span id="copy">Copyright &copy; 2012 <a href="http://wargoats.com">War Goats</a></span>
+      </footer>
+    </container>
+
+    <script src="js/backbone/collections/EventsList.js"></script>
+    <script src="js/backbone/collections/PlacesList.js"></script>
+    <script src="js/backbone/models/EventModel.js"></script>
+    <script src="js/backbone/models/PlaceModel.js"></script>
+    <script src="js/backbone/views/PlaceView.js"></script>
+    <script src="js/backbone/views/CalendarView.js"></script>
+    <script src="js/backbone/views/EventView.js"></script>
+    <script src="js/backbone/views/EventsView.js"></script>
+    <script src="js/backbone/views/AppView.js"></script>
+    <script src="js/AppController.js"></script>
+  </body>
+</html>
