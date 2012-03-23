@@ -24,9 +24,9 @@ li a:hover, li a:active {
 
 li a span {
   display: inline-block;
-  position: relative;
-  top: -10px;
-  left: 10px;
+  line-height: 1.5em;
+  vertical-align: top;
+  margin-left: 5px;
 }
 
 li a span.beta {
