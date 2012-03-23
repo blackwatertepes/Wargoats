@@ -79,6 +79,10 @@ footer {
   margin-top: 10px;
 }
 
+.modal li i {
+  margin-right: 5px;
+}
+
 .hidden {
   display: none;
 }
