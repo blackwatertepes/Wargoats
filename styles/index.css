@@ -37,7 +37,7 @@ li a span.beta {
 container {
   position: relative;
   display: block;
-  width: 960px;
+  width: 940px;
   margin: 10px auto 10px auto;
   background-color: #FFF;
   border: 1px solid #EEE;
@@ -77,4 +77,8 @@ header #title, #subtitle {
 
 footer {
   margin-top: 10px;
+}
+
+.hidden {
+  display: none;
 }

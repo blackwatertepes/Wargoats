@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <script src="../js/jquery.js" type="text/javascript"></script>
-    <script src="../bootstrap/js/bootstrap-tooltip.js" type="text/javascript"></script>
+    <script src="../bootstrap/js/bootstrap-modal.js" type="text/javascript"></script>
 
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -40,47 +40,47 @@
             <span class="label">Professional</span>
             <ul id="pro">
               <li>
-                <a id="cakes" href="#">
+                <a id="cakes" href="#modal_cake" data-toggle="modal">
                   <img src="images/icons/48_cakes.png" />
                   <span>
-                    Context: Birthday Cake &#169; 2011<br />
-                    Tell your friends what cake you prefer.
+                    Context Optional Inc: Birthday Cake &#169; 2011<br />
+                    Share with your friends what kind of birthday cake you prefer.
                   </span>
                 </a>
               </li>
 
               <li>
-                <a id="bravo" href="#">
+                <a id="bravo" href="#modal_bravo" data-toggle="modal">
                   <img src="images/icons/48_bravo.png" />
                   <span>
                     Bravo: Make Me A Model &#169; 2009<br />
-                    Touch up your photos.
+                    Touch up your photos, and submit them to Bravo.
                   </span>
                 </a>
               </li>
 
               <li>
-                <a id="prius" href="#">
+                <a id="prius" href="#modal_prius" data-toggle="modal">
                   <img src="images/icons/48_prius.png" />
                   <span>
-                    Prius: Touch and Go &#169; 2009<br />
+                    Toyota Prius: Touch and Go &#169; 2009<br />
                     A Simple Simon clone.
                   </span>
                 </a>
               </li>
 
               <li>
-                <a id="smartfm" href="#">
+                <a id="smartfm" href="#modal_smart" data-toggle="modal">
                   <img src="images/icons/48_smartfm.png" />
                   <span>
                     Smart.fm: Brain Speed &#169; 2009<br />
-                    Quizzes on how well you know your friends.
+                    Take quizzes on how well you know your friends.
                   </span>
                 </a>
               </li>
 
               <li>
-                <a id="kidnap" href="#">
+                <a id="kidnap" href="#modal_kidnap" data-toggle="modal">
                   <img src="images/icons/48_kidnap.png" />
                   <span>
                     Travel Channel: Kidnap! &#169; 2008<br />
@@ -152,5 +152,71 @@
         <span id="copy">Copyright &copy; 2012 <a href="http://wargoats.com">War Goats</a></span>
       </footer>
     </container>
+
+    <!-- MODALS -->
+    <div class="modal hidden" id="modal_cake">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal">X</a>
+        <h3>Context Optional: Birthday Cake &copy; 2011</h3>
+      </div>
+      <div class="modal-body">
+        <img src="images/mocks/cakes.png" alt="Cake Optional: Birthday Cake"/>
+      </div>
+      <div class="modal-footer">
+        <p>Select your favorite style of birthday cake. Then your friends can see which type of cake you'd prefer to receive on your birthday.</p>
+      </div>
+    </div>
+
+    <div class="modal hidden" id="modal_bravo">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal">X</a>
+        <h3>Bravo: Make Me A Model &#169; 2009</h3>
+      </div>
+      <div class="modal-body">
+        <img src="images/mocks/bravo.png" alt="Bravo: Make Me A Model"/>
+      </div>
+      <div class="modal-footer">
+        <p>Select your favorite style of birthday cake. Then your friends can see which type of cake you'd prefer to receive on your birthday.</p>
+      </div>
+    </div>
+
+    <div class="modal hidden" id="modal_prius">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal">X</a>
+        <h3>Toyota Prius: Touch and Go &#169; 2009</h3>
+      </div>
+      <div class="modal-body">
+        <img src="images/mocks/prius.jpg" alt="Toyota Prius: Touch and Go"/>
+      </div>
+      <div class="modal-footer">
+        <p>Select your favorite style of birthday cake. Then your friends can see which type of cake you'd prefer to receive on your birthday.</p>
+      </div>
+    </div>
+
+    <div class="modal hidden" id="modal_smart">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal">X</a>
+        <h3>Smart.fm: Brain Speed &#169; 2009</h3>
+      </div>
+      <div class="modal-body">
+        <img src="images/mocks/smartfm.jpg" alt="Smart.fm: Brain Speed"/>
+      </div>
+      <div class="modal-footer">
+        <p>Select your favorite style of birthday cake. Then your friends can see which type of cake you'd prefer to receive on your birthday.</p>
+      </div>
+    </div>
+
+    <div class="modal hidden" id="modal_kidnap">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal">X</a>
+        <h3>Travel Channel: Kidnap! &#169; 2008</h3>
+      </div>
+      <div class="modal-body">
+        <img src="images/mocks/kidnap.jpg" alt="Travel Channel: Kidnap!"/>
+      </div>
+      <div class="modal-footer">
+        <p>Select your favorite style of birthday cake. Then your friends can see which type of cake you'd prefer to receive on your birthday.</p>
+      </div>
+    </div>
   </body>
 </html>
