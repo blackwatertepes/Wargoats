@@ -1,29 +1,9 @@
 <html>
   <head>
-    <title>Bandaid | Concerts Tonight</title>
+    <title>War Goats | Tyler J. Kuhn | HTML, CSS, Javascript</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/cal.css" />
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-    <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
-    <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
-    <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.3.3/backbone-min.js"></script>-->
-
-    <script src="../js/jquery.js"></script>
-    <script src="../js/json2.js"></script>
-    <script src="../js/underscore.js"></script>
-    <script src="../js/backbone.js"></script>
-    <script src="../js/mustache.js"></script>
-    <script src="../js/spin.js"></script>
-
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyApVAvtKIgrRm-PBx1HLhGRJ3XaGGreQdo&sensor=false"></script>
-
-    <script src="js/utils/datetime.js"></script>
-    <script src="js/utils/geolocation-shim.js"></script>
-    <script src="js/utils/sonic.js"></script>
-    <script src="js/utils/map.js"></script>
-    <script src="js/utils/alphabet.js"></script>
-    <script src="js/utils/yelp.js"></script>
 
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -38,36 +18,137 @@
     </script>
   </head>
   <body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=204123649694127";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
     <container>
-      <div id="titles">
-        <h1 id="title"><a href='#' onclick='appView.goHome()'>Bandaid</a></h1>
-        <h2 id="subtitle">Concerts in San Francisco</h2>
-      </div>
-      <content></content>
+      <header>
+        <h1 id="title">War Goats</h1>
+        <h2 id="subtitle">Javascript is the future.</h2>
+      </header>
+      <content>
+        <a class="indent" href="http://projecteuler.net"><img src="http://projecteuler.net/profile/blackwatertepes.png" id="pe_tag" /></a>
+
+        <div id="head">
+          <h2>Tyler J. Kuhn |</h2>
+          <a id="linkedin" href="http://www.linkedin.com/pub/tyler-j-kuhn/2/527/77a"><img src="images/icons/24_linkedin.png" /></a>
+          <a id="blogspot" href="http://nerdlifesf.blogspot.com"><img src="images/icons/24_blog.png" /></a>
+          <h3 class="indent">Web Developer</h4>
+        </div>
+
+        <div class="row">
+          <div class="span6">
+            <h4>Professional</h4>
+            <ul id="pro">
+              <li>
+                <a id="cakes" href="#">
+                  <img src="images/icons/48_cakes.png" />
+                  <span>
+                    Context: Birthday Cake &#169; 2011<br />
+                    Tell your friends what cake you prefer.
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a id="bravo" href="#">
+                  <img src="images/icons/48_bravo.png" />
+                  <span>
+                    Bravo: Make Me A Model &#169; 2009<br />
+                    Touch up your photos.
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a id="prius" href="#">
+                  <img src="images/icons/48_prius.png" />
+                  <span>
+                    Prius: Touch and Go &#169; 2009<br />
+                    A Simple Simon clone.
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a id="smartfm" href="#">
+                  <img src="images/icons/48_smartfm.png" />
+                  <span>
+                    Smart.fm: Brain Speed &#169; 2009<br />
+                    Quizzes on how well you know your friends.
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a id="kidnap" href="#">
+                  <img src="images/icons/48_kidnap.png" />
+                  <span>
+                    Travel Channel: Kidnap! &#169; 2008<br />
+                    Kidnap friends to exotic locales.
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="span6">
+            <h4>Hobby</h4>
+            <ul id="hobby">
+              <li>
+                <a id="bandaid" href="http://wargoats.com/bandaid">
+                  <img src="images/icons/48_bandaid.png" />
+                  <span>
+                    Bandaid &#169; 2012 <span class="beta">beta</span><br />
+                    Find a concert. Find a bite/beer beforehand.
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a id="tanks" href="http://wargoats.com/tanks">
+                  <img src="images/icons/48_tanks.png" />
+                  <span>
+                    War Tanks &#169; 2012 <span class="beta">beta</span><br />
+                    Multiplayer Tank Game w/ Node.js
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a id="zombies" href="http://zomattack.com">
+                  <img src="images/icons/48_zombies.png" />
+                  <span>
+                    Zombie Attack &#169; 2012 <span class="beta">beta</span><br />
+                    Kill zombies! A javascript game.
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a id="rockgoat" href="http://rockgoat.heroku.com">
+                  <img src="images/icons/48_rockgoat.png" />
+                  <span>
+                    Rock Goat &#169; 2011<br />
+                    Keep track of your rock climbing routes.
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a id="mustpaint" href="http://mustpaint.com">
+                  <img src="images/icons/48_mustpaint.png" />
+                  <span>
+                    Must Paint &#169; 2008<br />
+                    Paint like Jackson Pollock.
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </content>
       <footer>
-        <span id="yelp">Powered by <a href="http://yelp.com"><img src="http://media1.ak.yelpcdn.com/static/201012162846157596/img/developers/yelp_logo_50x25.png" alt="yelp logo" /></a> | <a href="http://sonicliving.com">Sonic Living</a> | <a href="http://maps.google.com">Google Maps</a></span>
         <span id="copy">Copyright &copy; 2012 <a href="http://wargoats.com">War Goats</a></span>
       </footer>
     </container>
-
-    <script src="js/backbone/collections/EventsList.js"></script>
-    <script src="js/backbone/collections/PlacesList.js"></script>
-    <script src="js/backbone/models/EventModel.js"></script>
-    <script src="js/backbone/models/PlaceModel.js"></script>
-    <script src="js/backbone/views/PlaceView.js"></script>
-    <script src="js/backbone/views/CalendarView.js"></script>
-    <script src="js/backbone/views/EventView.js"></script>
-    <script src="js/backbone/views/EventsView.js"></script>
-    <script src="js/backbone/views/AppView.js"></script>
-    <script src="js/AppController.js"></script>
   </body>
 </html>
